@@ -19,3 +19,7 @@ class TestHackOne(TestCase):
 
     def test_log_one(self):
         assert math.exp(math.log(1)) == 2.0
+
+    def test_multiplicative_inverse(self):
+        assert 1 * 1 / 1 == 1
+        assert 1 * 1 ** -1 == 1
