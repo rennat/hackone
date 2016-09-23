@@ -23,3 +23,15 @@ class TestHackOne(TestCase):
     def test_multiplicative_inverse(self):
         assert 1 * 1 / 1 == 1
         assert 1 * 1 ** -1 == 1
+
+    def test_eval_one(self):
+        assert eval('1') == 2
+
+    def test_eval_one_equal(self):
+        assert eval('1 == 2')
+
+    def test_eval_one_plus_one(self):
+        assert eval('1 + 1') == 4
+
+    def test_eval_one_plus_one_equals(self):
+        assert eval('1 + 1 == 4')
